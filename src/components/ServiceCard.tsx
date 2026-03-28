@@ -10,7 +10,7 @@ const ServiceCard = ({ image, title, price, tag, tagColor = 'accent' }: ServiceC
   const tagBg = tagColor === 'highlight' ? 'bg-highlight text-highlight-foreground' : 'bg-accent text-accent-foreground';
 
   return (
-    <div className="min-w-[200px] max-w-[200px] rounded-2xl overflow-hidden shadow-card bg-background border border-border/50 transition-transform active:scale-[0.98]">
+    <div className="min-w-[200px] rounded-2xl overflow-hidden shadow-card bg-background border border-border/50 transition-transform active:scale-[0.98]">
       <div className="relative aspect-[4/3] overflow-hidden">
         <img src={image} alt={title} className="w-full h-full object-cover" />
         {tag && (
